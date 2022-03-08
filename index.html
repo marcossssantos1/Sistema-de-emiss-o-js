@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="dados">
+      <h1 class="sist">Sistema de emissão</h1>
+      Nome emitente: <br>
+      <input id="emit" type="text"/><br>
+      Recebendo de: <br>
+      <input id="rec" type="text"/><br>
+      Valor R$ <br>
+      <input id="value" type="number"/><br><br>
+      <button id="btn" onclick="gerarRecibo()">
+        Gerar recibo
+      </button>
+    </div>
+
+    <div class="print">
+      <h1>Recibo - <span id="recibo_emit"></span></h1>
+      <p>Recebendo de <span id="recibo_rec"></span></p>
+      Valor de R$ <h2 id="recibo_value">0,00</h2>
+      <p>Data: <span id="recibo_data"></span></p>
+      <br/><br/>
+      <div class="assinatura">Assinatura</div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
